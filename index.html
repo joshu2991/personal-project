@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Weather app</title>
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/main.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <div id="enter_container" class="absolute text-white text-center op-0"
+      style="top:50%; transform:translate(-50%, -50%); left:50%; position: absolute;">
+      <h1 class="font-space-mono text-lg tracking-wide">ARE YOU READY,</h1>
+      <p class="font-exo2 text-4xl">To see something incredible?</p>
+      <button id="button_enter"
+        class="op-0 border px-4 py-2 rounded-lg text-sm font-space-mono mt-8 hover:bg-white hover:text-gray-800">Yeah!</button>
+    </div>
+  </div>
+
+  <img id="background_space" src="/src/media/images/sunny.jpg" class="d-none" alt="space">
+  
+  <main id="main" class="d-none">
+    <div id="main_weather_container" class="d-flex">
+      <div id="crystal_weather_container_1">
+        <div class="cr-container">
+          <div id="title">The weather app</div>
+          <hr>
+          <div>
+            <h2 id="current_temperature">200°C</h2>
+            <div id="current_city">
+              Vancouver, BC
+            </div>
+          </div>
+          <hr>          
+        </div>
+        <div id="daily_container"></div>
+      </div>
+      <div id="crystal_weather_container_2">
+        <div class="d-flex">
+          <div class="w-100">
+            <p class="weather-forecast-title">Weather Forecast</p>
+            <p id="weather_code_text" style="color:white; font-size: 40px;">Storm with heavy rain</p>
+          </div>
+          <div class="d-flex w-100 justify-content-end">
+            <div class="search-bar-container text-end">
+              <input type="input" class="search-bar w-100" id="search_bar" placeholder="Search">
+              <div class="d-none" id="input_city_selector"></div>
+            </div>
+          </div>
+        </div>
+        <canvas id="weatherChart" width="90%" height="200"></canvas>
+        <div id="hourly_section" class="d-flex flex-column">
+          <div class="d-flex hourly_container" id="hourlyContainer"></div>
+        </div>
+      </div>
+    </div>
+  </main>  
+  
+  <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/weather_api.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="/src/js/meteo_graph.js"></script>
+</body>
+
+</html>
