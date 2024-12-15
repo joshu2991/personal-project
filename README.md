@@ -2,8 +2,6 @@
 
 A dynamic weather visualization project that combines Three.js for 3D graphics with real-time weather data from Open-Meteo API. Features an interactive 3D entrance animation and detailed weather information display.
 
-![Project Preview](path_to_your_preview_image.png)
-
 ## 🌟 Features
 
 - 3D interactive entrance animation using Three.js
