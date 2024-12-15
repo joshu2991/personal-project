@@ -29,8 +29,7 @@ Before you begin, ensure you have the following installed:
 
 ## ⚙️ Installation
 
-1. Clone the repository:
-git clone https://github.com/your-username/3d-weather-visualization.git
+1. Clone the repository
 
 2. Navigate to the project directory:
 cd 3d-weather-visualization
@@ -98,6 +97,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-Your Name - [your.email@example.com](mailto:your.email@example.com)
+José Trueba - [joshu2991@hotmail.com](mailto:joshu2991@hotmail.com)
 
-Project Link: [https://github.com/your-username/3d-weather-visualization](https://github.com/your-username/3d-weather-visualization)
+Project Link: [https://github.com/joshu2991/3d-weather-visualization](https://github.com/joshu2991/3d-weather-visualization)
